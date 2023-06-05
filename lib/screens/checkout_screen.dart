@@ -35,7 +35,13 @@ class CheckoutScreen extends StatelessWidget {
             children: [
               ElevatedButton(
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.white ),
-                  onPressed: () {},
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                        content: Text('Order has been placed.')));
+                    Navigator.pushNamed(context, '/');
+
+                  },
                   child: Text(
                     'ORDER NOW',
                     style: Theme.of(context).textTheme.headlineMedium!,

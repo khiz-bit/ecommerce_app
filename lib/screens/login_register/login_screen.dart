@@ -44,6 +44,9 @@ class _LoginScreenState extends State<LoginScreen> {
     return BlocConsumer<AppBloc, AppState>(
       listener: (context, state) {
         if (state is AppStateLoggedIn && state.successful) {
+          ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                  content: Text('Logged In!.')));
           Navigator.pushReplacementNamed(context, '/');
         }
       },

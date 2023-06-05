@@ -255,6 +255,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               ),
                               onPressed: () {
                                 _submit();
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                        content: Text('Registered Successfully.')));
                               },
                               child: Text(
                                 'Register',
