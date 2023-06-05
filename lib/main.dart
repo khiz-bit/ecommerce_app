@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
         title: 'Ecommerce App',
         theme: theme(),
         onGenerateRoute: AppRouter.onGenerateRoute,
-        initialRoute: LoginScreen.routeName,
+        initialRoute: SplashScreen.routeName,
       ),
     );
   }

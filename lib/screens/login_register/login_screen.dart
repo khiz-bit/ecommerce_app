@@ -172,8 +172,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               SizedBox(height: 20,),
                               ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: darkTheme ? Colors.amber.shade400 : Colors.blue,
-                                  onPrimary: darkTheme ? Colors.black : Colors.white,
+                                  backgroundColor: darkTheme ? Colors.amber.shade400 : Colors.blue,
+                                  foregroundColor: darkTheme ? Colors.black : Colors.white,
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(32),

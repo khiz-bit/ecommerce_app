@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget  {
 
   @override
   Widget build(BuildContext context) {
-    Timer(Duration(seconds: 2), () => Navigator.pushNamed(context, '/'));
+    Timer(Duration(seconds: 2), () => Navigator.pushNamed(context, '/login'));
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
